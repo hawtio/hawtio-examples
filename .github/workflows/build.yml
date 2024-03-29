@@ -1,0 +1,37 @@
+name: Build
+
+on:
+  pull_request:
+    branches:
+      - hawtio-4.x
+    paths-ignore:
+      - "**.md"
+  push:
+    branches:
+      - hawtio-4.x
+    paths-ignore:
+      - "**.md"
+  workflow_dispatch:
+
+env:
+  MVN_ARGS: --batch-mode --no-transfer-progress
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        java: ["17", "21"]
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: "temurin"
+          java-version: ${{ matrix.java }}
+          cache: "maven"
+      - name: Build & test
+        run: |
+          mvn ${MVN_ARGS} install

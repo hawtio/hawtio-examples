@@ -1,0 +1,63 @@
+server:
+  port: 10000
+  servlet:
+    # Adding SameSite=Strict for session cookie is recommended
+    session:
+      cookie:
+        same-site: strict
+
+management:
+  server:
+    port: 10001
+  endpoints:
+    web:
+      exposure:
+        include: hawtio,jolokia
+    jmx:
+      exposure:
+        include: health,info,loggers,httpexchanges
+  info:
+    env:
+      enabled: true
+    java:
+      enabled: true
+
+info:
+  app:
+    name: Hawtio Spring Boot Sample App
+
+spring:
+  jmx:
+    enabled: true
+  security:
+    user:
+      name: hawtio
+      password: hawtio
+      roles: admin,viewer
+  devtools:
+    restart:
+      enabled: true
+    livereload:
+      enabled: true
+
+logging:
+  level:
+    io.hawt: INFO
+    org.springframework: WARN
+    org.springframework.boot.autoconfigure.security: INFO
+    io.undertow: WARN
+
+hawtio:
+  authenticationEnabled: true
+
+camel:
+  springboot:
+    name: SampleCamel
+    # Uncomment these properties to enable the Camel plugin Trace tab
+    #tracing: true
+    #backlog-tracing: true
+    #use-breadcrumb: true
+
+quartz:
+  cron: 0/10 * * * * ?
+  repeatInterval: 10000

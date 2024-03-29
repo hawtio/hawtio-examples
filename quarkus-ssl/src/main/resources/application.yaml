@@ -1,0 +1,70 @@
+quarkus:
+  log:
+    #min-level: TRACE
+    category:
+      "io.hawt":
+        level: INFO
+      #"io.hawt.web.auth":
+      #  level: TRACE
+      #"io.hawt.web.filters":
+      #  level: TRACE
+      #"io.hawt.quarkus":
+      #  level: DEBUG
+      "io.quarkus":
+        level: WARN
+      "io.undertow":
+        level: WARN
+      "org.apache.camel":
+        level: INFO
+
+  hawtio:
+    # Uncomment to disable Hawtio authentication
+    authenticationEnabled: true
+    # Uncomment to enable user role checks
+    #roles: admin
+    # 'sample' custom plugin settings
+    plugin:
+      sample-plugin:
+        scope: samplePlugin
+        module: ./plugin
+        # url is optional unless it is hosted on a different location
+        #url: http://localhost:8080
+
+  # Quarkus' property file security configuration
+  # https://quarkus.io/guides/security-properties
+  security:
+    users:
+      embedded:
+        enabled: true
+        plain-text: true
+        users:
+          hawtio: hawtio
+        roles:
+          hawtio: admin
+
+  camel:
+    # Enable the Camel plugin Debug tab even in non-development environment
+    debug:
+      enabled: true
+
+  # Container/Kubernetes settings
+  container-image:
+    registry: quay.io
+    group: hawtio
+  kubernetes:
+    image-pull-policy: always
+    labels:
+      app: hawtio
+
+camel:
+  context:
+    name: SampleCamel
+  main:
+    # Uncomment these properties to enable the Camel plugin Trace tab
+    #tracing: true
+    #backlogTracing: true
+    #useBreadcrumb: true
+
+quartz:
+  cron: 0/10 * * * * ?
+  repeatInterval: 10000
