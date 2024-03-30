@@ -42,6 +42,14 @@ quarkus:
         roles:
           hawtio: admin
 
+  http:
+    ssl:
+      certificate:
+        key-store-file: app.keystore
+        key-store-file-type: PKCS12
+        key-store-password: P@ssw0rd!
+    insecure-requests: REDIRECT
+
   camel:
     # Enable the Camel plugin Debug tab even in non-development environment
     debug:
@@ -52,7 +60,7 @@ quarkus:
     registry: quay.io
     group: hawtio
   kubernetes:
-    image-pull-policy: always
+    image-pull-policy: Always
     labels:
       app: hawtio
 

@@ -9,10 +9,9 @@
     <version>4.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>io.hawt.examples</groupId>
   <artifactId>hawtio-example-quarkus-ssl</artifactId>
   <name>${project.artifactId}</name>
-  <description>Hawtio :: Sample Quarkus 3.x application</description>
+  <description>Hawtio :: Sample SSL'ed Quarkus application</description>
 
   <properties>
     <skipITs>true</skipITs>
@@ -169,6 +168,7 @@
         <configuration>
           <systemPropertyVariables>
             <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+            <!--suppress UnresolvedMavenProperty -->
             <maven.home>${maven.home}</maven.home>
           </systemPropertyVariables>
         </configuration>
@@ -184,6 +184,7 @@
             <configuration>
               <systemPropertyVariables>
                 <java.util.logging.manager>org.jboss.logmanager.LogManager</java.util.logging.manager>
+                <!--suppress UnresolvedMavenProperty -->
                 <maven.home>${maven.home}</maven.home>
               </systemPropertyVariables>
             </configuration>

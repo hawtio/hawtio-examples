@@ -9,10 +9,9 @@
     <version>4.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>io.hawt.examples</groupId>
   <artifactId>hawtio-example-springboot-ssl</artifactId>
   <name>${project.artifactId}</name>
-  <description>Hawtio :: Sample Spring Boot 3.x process with Spring Security</description>
+  <description>Hawtio :: Sample SSL'ed Spring Boot application</description>
 
   <dependencyManagement>
     <dependencies>
@@ -89,6 +88,16 @@
       <groupId>io.hawt</groupId>
       <artifactId>hawtio-log-logback</artifactId>
     </dependency>
+    <!--
+      Hawtio example plugin project
+      Since static resources are packaged under META-INF/resources in the JAR,
+      it's enough to add this dependency to the project to load the plugin resources.
+    -->
+    <dependency>
+      <groupId>io.hawt.examples</groupId>
+      <artifactId>hawtio-example-sample-plugin</artifactId>
+      <version>${hawtio-version}</version>
+    </dependency>
 
     <!-- Camel -->
     <dependency>
@@ -134,7 +143,7 @@
         <artifactId>spring-boot-maven-plugin</artifactId>
         <version>${spring-boot-version}</version>
         <configuration>
-          <mainClass>io.hawt.example.spring.boot.SampleSecuritySpringBootService</mainClass>
+          <mainClass>io.hawt.example.spring.boot.SampleSslSpringBootService</mainClass>
         </configuration>
         <executions>
           <execution>
