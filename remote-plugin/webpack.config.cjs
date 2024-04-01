@@ -5,7 +5,7 @@ const { dependencies } = require('./package.json')
 const { hawtioBackend } = require('@hawtio/backend-middleware')
 const path = require('path')
 
-const publicPath = '/hawtio'
+const publicPath = ''
 const outputPath = path.resolve(__dirname, 'build')
 
 module.exports = {

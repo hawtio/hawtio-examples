@@ -8,7 +8,8 @@
     "build": "webpack --mode production",
     "test": "jest --passWithNoTests",
     "format": "prettier --write .",
-    "lint": "eslint src/"
+    "lint": "eslint src/",
+    "deploy": "yarn build && cp build/index.html build/200.html && surge build/ $npm_package_name.surge.sh"
   },
   "dependencies": {
     "@hawtio/react": "^1.2.0",
