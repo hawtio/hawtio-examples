@@ -7,4 +7,5 @@ A collection of more advanced Hawtio examples. For basic examples, see the Hawti
 | Example | Description |
 |---------|-------------|
 | [Quarkus SSL](quarkus-ssl/) | This sample application shows how to run Hawtio with Quarkus. |
+| [Remote plugin](remote-plugin/) | This sample plugin demonstrates how a Hawtio plugin can be hosted remotely and loaded from a secure location (SSL). |
 | [Spring Boot SSL](springboot-ssl/) | This sample application shows how to run Hawtio with Spring Boot 3. |
