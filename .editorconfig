@@ -13,6 +13,5 @@ insert_final_newline = true
 [*.java]
 indent_size = 4
 
-[*.{html,ts,js,json,css,less}]
-indent_style = space
+[*.{html,ts,tsx,js,jsx,json,css}]
 indent_size = 2

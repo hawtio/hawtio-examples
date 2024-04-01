@@ -55,6 +55,7 @@
 
   <modules>
     <module>quarkus-ssl</module>
+    <module>remote-plugin</module>
     <module>springboot-ssl</module>
   </modules>
 

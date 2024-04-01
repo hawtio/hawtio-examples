@@ -16,11 +16,9 @@ runtime-EclipseApplication-m2eclipse
 ./fuseenterprise
 .idea
 tags
-node_modules
 hawtio-config
 .tscache
 node/
-bower_components/
 .vscode
 .attach_pid*
 .camel-jbang
@@ -31,10 +29,10 @@ node_modules
 
 # yarn
 .pnp.*
-**/.yarn/*
+.yarn/*
 !.yarn/patches
 !.yarn/plugins
 !.yarn/releases
 !.yarn/sdks
 !.yarn/versions
-**/build/**
+build
