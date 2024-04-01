@@ -38,4 +38,16 @@ public class SampleSslSpringBootService {
 
         return plugin;
     }
+
+    /**
+     * Loading the remote plugin.
+     */
+    @Bean
+    public HawtioPlugin remotePlugin() {
+        // Recommended to use SSL when the plugin is hosted remotely
+        return new HawtioPlugin(
+            "remotePlugin",
+            "./plugin",
+            "https://hawtio-example-remote-plugin.surge.sh");
+    }
 }

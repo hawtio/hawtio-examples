@@ -29,6 +29,11 @@ quarkus:
         module: ./plugin
         # url is optional unless it is hosted on a different location
         #url: http://localhost:8080
+      remote-plugin:
+        scope: remotePlugin
+        module: ./plugin
+        # Recommended to use SSL when the plugin is hosted remotely
+        url: https://hawtio-example-remote-plugin.surge.sh
 
   # Quarkus' property file security configuration
   # https://quarkus.io/guides/security-properties
