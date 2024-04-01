@@ -38,6 +38,10 @@
     <!-- Keycloak -->
     <keycloak-version>23.0.1</keycloak-version>
 
+    <!-- Used for maven-frontend-plugin -->
+    <node-version>v20.9.0</node-version>
+    <yarn-version>v1.22.21</yarn-version>
+
     <!-- Maven plugins -->
     <build-helper-maven-plugin-version>3.5.0</build-helper-maven-plugin-version>
     <exec-maven-plugin-version>3.1.1</exec-maven-plugin-version>
@@ -181,6 +185,11 @@
         <plugin>
           <artifactId>maven-war-plugin</artifactId>
           <version>${maven-war-plugin-version}</version>
+        </plugin>
+        <plugin>
+          <groupId>com.github.eirslett</groupId>
+          <artifactId>frontend-maven-plugin</artifactId>
+          <version>${frontend-maven-plugin-version}</version>
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
