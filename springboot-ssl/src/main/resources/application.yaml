@@ -59,10 +59,9 @@ hawtio:
 camel:
   springboot:
     name: SampleCamel
+  trace:
     # Uncomment these properties to enable the Camel plugin Trace tab
-    #tracing: true
-    #backlog-tracing: true
-    #use-breadcrumb: true
+    #enabled: true
 
 quartz:
   cron: 0/10 * * * * ?
