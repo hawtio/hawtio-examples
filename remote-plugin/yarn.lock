@@ -2021,17 +2021,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@eslint/js@npm:9.36.0":
+"@eslint/js@npm:9.36.0, @eslint/js@npm:^9.36.0":
   version: 9.36.0
   resolution: "@eslint/js@npm:9.36.0"
   checksum: 10/a0542f529f87b9ad69ef85c47b0c070b763591a61773b131a9d1d53934a587f0708c05a1a8f48a6805486004a4922c91d696c1e4835ff61f8750ffbded2f0c30
-  languageName: node
-  linkType: hard
-
-"@eslint/js@npm:^9.34.0":
-  version: 9.34.0
-  resolution: "@eslint/js@npm:9.34.0"
-  checksum: 10/3bbe8423e2d11e0eeb70a79f5cd25b89a8920cade36e479e4288d1e01043b48a0d737f46d8e5dc91c53afad5bc0edc882cc5a5a024ac1ac31b0b7b4d4a9f16c0
   languageName: node
   linkType: hard
 
@@ -8446,7 +8439,7 @@ __metadata:
   resolution: "hawtio-example-remote-plugin@workspace:."
   dependencies:
     "@eslint/compat": "npm:^1.4.0"
-    "@eslint/js": "npm:^9.34.0"
+    "@eslint/js": "npm:^9.36.0"
     "@hawtio/backend-middleware": "npm:^1.0.7"
     "@hawtio/react": "npm:^1.9.6"
     "@swc/core": "npm:^1.13.5"
