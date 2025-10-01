@@ -19,7 +19,7 @@
   "devDependencies": {
     "@eslint/compat": "^1.4.0",
     "@eslint/js": "^9.34.0",
-    "@hawtio/backend-middleware": "^1.0.6",
+    "@hawtio/backend-middleware": "^1.0.7",
     "@swc/core": "^1.13.5",
     "copy-webpack-plugin": "^13.0.1",
     "css-loader": "^7.1.2",
