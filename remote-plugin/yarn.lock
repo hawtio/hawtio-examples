@@ -7337,15 +7337,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"eslint-plugin-testing-library@npm:^7.6.6":
-  version: 7.6.6
-  resolution: "eslint-plugin-testing-library@npm:7.6.6"
+"eslint-plugin-testing-library@npm:^7.11.0":
+  version: 7.11.0
+  resolution: "eslint-plugin-testing-library@npm:7.11.0"
   dependencies:
     "@typescript-eslint/scope-manager": "npm:^8.15.0"
     "@typescript-eslint/utils": "npm:^8.15.0"
   peerDependencies:
     eslint: ^8.57.0 || ^9.0.0
-  checksum: 10/620032f284d48ded915485f383936099feac4694e697d189b8426e429bfeff091f4812d4bea8977341f7809bf7e7201887a732ff7b659fbc2c1174a13c4e2456
+  checksum: 10/25be8a202879220213a5b15204ab85e82e8c57d3c68ba6e9f946d122b39c80b646c198968ad5a9990def9e3e42a0a09dcdf1256a7e9d58c06170bd9a869ad956
   languageName: node
   linkType: hard
 
@@ -8344,7 +8344,7 @@ __metadata:
     eslint-config-react-app: "npm:^7.0.1"
     eslint-plugin-import: "npm:^2.32.0"
     eslint-plugin-react-hooks: "npm:^5.2.0"
-    eslint-plugin-testing-library: "npm:^7.6.6"
+    eslint-plugin-testing-library: "npm:^7.11.0"
     html-webpack-plugin: "npm:^5.6.4"
     jest: "npm:^30.1.2"
     prettier: "npm:^3.6.2"
