@@ -12,7 +12,7 @@ import {
   Text,
   Title,
 } from '@patternfly/react-core'
-import { TableComposable, Tbody, Td, Thead, Tr } from '@patternfly/react-table'
+import { Table, Tbody, Td, Thead, Tr } from '@patternfly/react-table'
 import React, { useEffect, useState } from 'react'
 import { log, pluginTitle } from './globals'
 
@@ -107,7 +107,7 @@ const Board: React.FC<{ next: 'X' | 'O'; squares: string[]; onPlay: (squares: st
   }
 
   return (
-    <TableComposable variant='compact'>
+    <Table variant='compact'>
       <Thead>
         <Tr></Tr>
       </Thead>
@@ -128,7 +128,7 @@ const Board: React.FC<{ next: 'X' | 'O'; squares: string[]; onPlay: (squares: st
           ))}
         </Tr>
       </Tbody>
-    </TableComposable>
+    </Table>
   )
 }
 
