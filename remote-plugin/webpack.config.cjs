@@ -35,7 +35,11 @@ module.exports = {
         },
         '@hawtio/react': {
           singleton: true,
-          requiredVersion: '^1.2.0',
+          requiredVersion: dependencies['@hawtio/react'],
+        },
+        '@patternfly/react-core': {
+          singleton: true,
+          requiredVersion: dependencies['@patternfly/react-core'],
         },
       },
     }),
@@ -104,6 +108,10 @@ module.exports = {
   },
   resolve: {
     extensions: ['.ts', '.tsx', '.js', '.jsx'],
+    symlinks: false,
+    alias: {
+      '@thumbmarkjs/thumbmarkjs': path.join(__dirname, './node_modules/@thumbmarkjs/thumbmarkjs/dist/thumbmark.esm.js'),
+    },
   },
   ignoreWarnings: [/Failed to parse source map/, /Critical dependency: the request of a dependency is an expression/],
   performance: {

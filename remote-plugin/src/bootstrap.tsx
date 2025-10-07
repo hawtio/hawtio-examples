@@ -1,7 +1,6 @@
-import { Hawtio, connect, hawtio, jmx } from '@hawtio/react'
+import { HawtioInitialization } from '@hawtio/react/init'
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { plugin } from './remote-plugin'
 
 /*
 const App = () => (
@@ -12,19 +11,24 @@ const App = () => (
 )
 */
 
-// Register essential plugins
-connect()
-jmx()
-
-// Register the plugin under development
-plugin()
-
-// Bootstrap Hawtio
-hawtio.bootstrap()
-
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
-root.render(
-  <React.StrictMode>
-    <Hawtio />
-  </React.StrictMode>,
-)
+root.render(<HawtioInitialization verbose={true} />)
+
+import('@hawtio/react').then(async ({ hawtio, connect, jmx }) => {
+
+  // Register essential plugins
+  connect()
+  jmx()
+
+  // Register the plugin under development
+  import('./remote-plugin').then(({ plugin }) => plugin())
+
+  // Bootstrap Hawtio
+  await hawtio.bootstrap()
+  const { Hawtio } = await import('@hawtio/react/ui')
+  root.render(
+    <React.StrictMode>
+      <Hawtio />
+    </React.StrictMode>,
+  )
+})
