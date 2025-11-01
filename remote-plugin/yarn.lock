@@ -2720,6 +2720,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@patternfly/react-styles@npm:^6.4.0":
+  version: 6.4.0
+  resolution: "@patternfly/react-styles@npm:6.4.0"
+  checksum: 10/fcd90c905ba749845efe8edb3dd35f05a151973ba4fe26847cf41863954b925a10b93a9a8821fc78a93d411ca1fae7b01d57b92b7fa690bbf1b98f13318f5d36
+  languageName: node
+  linkType: hard
+
 "@patternfly/react-table@npm:^5.4.16":
   version: 5.4.16
   resolution: "@patternfly/react-table@npm:5.4.16"
@@ -8302,7 +8309,7 @@ __metadata:
     "@patternfly/react-code-editor": "npm:^5.4.18"
     "@patternfly/react-core": "npm:^5.4.14"
     "@patternfly/react-icons": "npm:^5.4.2"
-    "@patternfly/react-styles": "npm:^5.4.1"
+    "@patternfly/react-styles": "npm:^6.4.0"
     "@patternfly/react-table": "npm:^5.4.16"
     "@patternfly/react-tokens": "npm:^5.4.1"
     "@swc/core": "npm:^1.13.5"
