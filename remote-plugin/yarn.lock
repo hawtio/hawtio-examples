@@ -2072,23 +2072,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hawtio/react@npm:^1.12.0":
-  version: 1.12.0
-  resolution: "@hawtio/react@npm:1.12.0"
+"@hawtio/react@npm:^1.12.1":
+  version: 1.12.1
+  resolution: "@hawtio/react@npm:1.12.1"
   dependencies:
     "@hawtio/camel-model-v4_10": "npm:@hawtio/camel-model@~4.10.7"
     "@hawtio/camel-model-v4_14": "npm:@hawtio/camel-model@~4.14.1"
     "@jolokia.js/simple": "npm:^2.4.2"
-    "@module-federation/utilities": "npm:^3.1.77"
+    "@module-federation/utilities": "npm:^3.1.78"
     "@monaco-editor/react": "npm:^4.6.0"
-    "@thumbmarkjs/thumbmarkjs": "npm:^1.5.1"
+    "@thumbmarkjs/thumbmarkjs": "npm:^1.6.1"
     dagre: "npm:^0.8.5"
-    dompurify: "npm:^3.3.0"
+    dompurify: "npm:^3.3.1"
     eventemitter3: "npm:^5.0.1"
     jolokia.js: "npm:^2.4.2"
     js-logger: "npm:^1.6.1"
     jwt-decode: "npm:^4.0.0"
-    keycloak-js: "npm:^26.2.1"
+    keycloak-js: "npm:^26.2.2"
     oauth4webapi: "npm:^3.8.3"
     react-markdown: "npm:^10.1.0"
     react-split: "npm:^2.0.14"
@@ -2107,7 +2107,7 @@ __metadata:
     react: ^17 || ^18
     react-dom: ^17 || ^18
     react-router-dom: ^6.30
-  checksum: 10/a13d08d2f8b499fd2d448eeec6b4d0cb81f6fbd699e26e4e2ea0133e598b8d47ebd749d1ee41670305490df83f32b9d1b25f0b41bd71d4977ca5f8bd85c56be0
+  checksum: 10/3d1240f3fa4da834476885a871dddc847f6a94463382437b49676c36236971b13fac82414350998dcdf18c7a96d596ec6e9373a68b25b8925c027165829e8f07
   languageName: node
   linkType: hard
 
@@ -2527,18 +2527,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@module-federation/sdk@npm:0.22.0":
-  version: 0.22.0
-  resolution: "@module-federation/sdk@npm:0.22.0"
-  checksum: 10/d7085d883730a33145052520787a7e59cf9c54b51b2946bebc7c63a6bb668bcc6cbdc27fa0b7354a62f5a7ee4e8829a66b84e644607498f2e37cfd5eb4ded0da
+"@module-federation/sdk@npm:0.23.0":
+  version: 0.23.0
+  resolution: "@module-federation/sdk@npm:0.23.0"
+  checksum: 10/f5d1025a5b56ed87165c35837095bbe1175a4b010f1d32a56316542e619a0ca98d4bb537b05ced7ed69b47f579ed05f59dfc4258a21747616c301b4b99d1e9b1
   languageName: node
   linkType: hard
 
-"@module-federation/utilities@npm:^3.1.77":
-  version: 3.1.78
-  resolution: "@module-federation/utilities@npm:3.1.78"
+"@module-federation/utilities@npm:^3.1.78":
+  version: 3.1.80
+  resolution: "@module-federation/utilities@npm:3.1.80"
   dependencies:
-    "@module-federation/sdk": "npm:0.22.0"
+    "@module-federation/sdk": "npm:0.23.0"
   peerDependencies:
     react: ^16 || ^17 || ^18
     react-dom: ^16 || ^17 || ^18
@@ -2550,7 +2550,7 @@ __metadata:
       optional: true
     react-dom:
       optional: true
-  checksum: 10/c4c91e78847142138018175e9e7c018cb04c103c2317818c6e3d7e6c0f2dc44631a23adaea9cabc752615a45b3a4764a4cc6ac38fc7bbc8e91e2701fa35844cd
+  checksum: 10/42fc3e258dfb0c9f7f34005b518697d3158180f1ce6969e3303556be9caf4b9cfce7e3de39e833585b83466d4652aeb6f1078609098657145383829d814497e1
   languageName: node
   linkType: hard
 
@@ -3041,10 +3041,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@thumbmarkjs/thumbmarkjs@npm:^1.5.1":
-  version: 1.6.1
-  resolution: "@thumbmarkjs/thumbmarkjs@npm:1.6.1"
-  checksum: 10/46d3982b2e0c63e5a71ee57ec900ab4a556b3d7d494f92315dae744c414b9dbdc2563574d4b38ead8fadc110f70f89bbf577b36b09b59b5818f04105d814c43e
+"@thumbmarkjs/thumbmarkjs@npm:^1.6.1":
+  version: 1.6.4
+  resolution: "@thumbmarkjs/thumbmarkjs@npm:1.6.4"
+  checksum: 10/e509604e77fd46d2b5917b2d5ce8251a61fc26115de67e12f3fc0c12ed64b32d4404a05f3a96458f8bfd432f2bdfec3832356f3487944412900204522e4ee10a
   languageName: node
   linkType: hard
 
@@ -6416,7 +6416,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^3.3.0":
+"dompurify@npm:^3.3.1":
   version: 3.3.1
   resolution: "dompurify@npm:3.3.1"
   dependencies:
@@ -8254,7 +8254,7 @@ __metadata:
     "@eslint/compat": "npm:^2.0.0"
     "@eslint/js": "npm:^9.39.0"
     "@hawtio/backend-middleware": "npm:^1.0.7"
-    "@hawtio/react": "npm:^1.12.0"
+    "@hawtio/react": "npm:^1.12.1"
     "@patternfly/react-charts": "npm:^7.4.9"
     "@patternfly/react-code-editor": "npm:^5.4.18"
     "@patternfly/react-core": "npm:^5.4.14"
@@ -9897,7 +9897,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"keycloak-js@npm:^26.2.1":
+"keycloak-js@npm:^26.2.2":
   version: 26.2.2
   resolution: "keycloak-js@npm:26.2.2"
   checksum: 10/43e3dcd984abd25d2ac6526670fff63fa1195f55ece5e9f5458946e60ffd14e3159983ac645eb0708ac843e55d08f7aede718822e82c884023009e229b10e87e
