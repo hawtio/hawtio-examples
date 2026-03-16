@@ -5,12 +5,11 @@ import {
   CardBody,
   CardFooter,
   CardTitle,
+  Content,
   Gallery,
   GalleryItem,
   PageGroup,
-  PageSection,
-  Text,
-  Title,
+  PageSection
 } from '@patternfly/react-core'
 import { Table, Tbody, Td, Thead, Tr } from '@patternfly/react-table'
 import React, { useEffect, useState } from 'react'
@@ -21,14 +20,14 @@ export const RemotePlugin: React.FunctionComponent = () => {
   return (
     <>
       <PageGroup>
-        <PageSection variant='light'>
-          <Title headingLevel='h1'>{pluginTitle}</Title>
-          <Text component='small'>
+        <PageSection hasBodyWrapper={false}>
+          <Content component='h1'>{pluginTitle}</Content>
+          <Content component='small'>
             A sample Hawtio plugin that is hosted on an external site and is discovered dynamically at runtime.
-          </Text>
+          </Content>
         </PageSection>
       </PageGroup>
-      <PageSection>
+      <PageSection hasBodyWrapper={false}>
         <Gallery hasGutter minWidths={{ default: '300px' }}>
           <GalleryItem>
             <Card>

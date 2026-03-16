@@ -12,15 +12,15 @@
     "deploy": "yarn build && cp build/index.html build/200.html && surge build/ $npm_package_name.surge.sh"
   },
   "dependencies": {
-    "@hawtio/react": "^1.12.1",
-    "@patternfly/react-charts": "^7.4.9",
-    "@patternfly/react-code-editor": "^5.4.18",
-    "@patternfly/react-core": "^5.4.14",
-    "@patternfly/react-icons": "^5.4.2",
-    "@patternfly/react-styles": "^5.4.1",
-    "@patternfly/react-table": "^5.4.16",
-    "@patternfly/react-tokens": "^5.4.1",
-    "monaco-editor": "^0.55.1",
+    "@hawtio/react": "^2.0.0",
+    "@patternfly/react-charts": "^8.4.0",
+    "@patternfly/react-code-editor": "^6.4.0",
+    "@patternfly/react-core": "^6.4.0",
+    "@patternfly/react-icons": "^6.4.0",
+    "@patternfly/react-styles": "^6.4.0",
+    "@patternfly/react-table": "^6.4.0",
+    "@patternfly/react-tokens": "^6.4.0",
+    "monaco-editor": "~0.52.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.30.3"
@@ -33,7 +33,7 @@
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
     "@types/react-router-dom": "^5.3.3",
-    "copy-webpack-plugin": "^13.0.1",
+    "copy-webpack-plugin": "^14.0.0",
     "css-loader": "^7.1.4",
     "eslint": "^10.0.2",
     "eslint-config-prettier": "^10.1.8",
@@ -52,8 +52,11 @@
     "webpack-cli": "^6.0.1",
     "webpack-dev-server": "^5.2.3"
   },
+  "resolutions": {
+    "@module-federation/utilities": "3.1.83"
+  },
   "engines": {
     "node": ">=18"
   },
-  "packageManager": "yarn@4.10.3"
+  "packageManager": "yarn@4.13.0"
 }

@@ -5,7 +5,7 @@
   <groupId>io.hawt.examples</groupId>
   <artifactId>hawtio-examples</artifactId>
   <packaging>pom</packaging>
-  <version>4.0-SNAPSHOT</version>
+  <version>5.0-SNAPSHOT</version>
   <name>Hawtio Examples</name>
   <description>Hawtio :: Examples</description>
 
@@ -21,20 +21,23 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <hawtio-version>4.6.2</hawtio-version>
+    <hawtio-version>5.0.0</hawtio-version>
 
     <!-- Versions for major components -->
     <!-- Camel -->
-    <camel-version>4.17.0</camel-version>
+    <camel-version>4.18.0</camel-version>
     <!-- Jolokia -->
-    <jolokia-version>2.2.9</jolokia-version>
+    <jolokia-version>2.5.1</jolokia-version>
     <!-- Quarkus -->
-    <quarkus-version>3.32.1</quarkus-version>
-    <!-- Spring -->
-    <spring-version>6.2.6</spring-version>
-    <spring-boot-version>3.4.13</spring-boot-version>
+    <quarkus-version>3.32.3</quarkus-version>
+    <!-- Spring Boot 3 -->
+    <spring-version>6.2.16</spring-version>
+    <spring-boot-version>3.5.11</spring-boot-version>
+    <!-- Spring Boot 4 -->
+    <spring7-version>7.0.5</spring7-version>
+    <spring-boot4-version>4.0.3</spring-boot4-version>
     <!-- Jetty -->
-    <jetty-version>12.0.19</jetty-version>
+    <jetty-version>12.1.7</jetty-version>
 
     <!-- Used for maven-frontend-plugin -->
     <node-version>v22.16.0</node-version>
@@ -42,10 +45,10 @@
 
     <!-- Maven plugins -->
     <build-helper-maven-plugin-version>3.6.1</build-helper-maven-plugin-version>
-    <exec-maven-plugin-version>3.5.0</exec-maven-plugin-version>
+    <exec-maven-plugin-version>3.6.3</exec-maven-plugin-version>
     <frontend-maven-plugin-version>2.0.0</frontend-maven-plugin-version>
     <jetty-plugin-version>11.0.26</jetty-plugin-version>
-    <maven-antrun-plugin-version>3.1.0</maven-antrun-plugin-version>
+    <maven-antrun-plugin-version>3.2.0</maven-antrun-plugin-version>
     <maven-clean-plugin-version>3.5.0</maven-clean-plugin-version>
     <maven-compiler-plugin-version>3.15.0</maven-compiler-plugin-version>
     <maven-dependency-plugin-version>3.10.0</maven-dependency-plugin-version>
