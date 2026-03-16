@@ -5,31 +5,13 @@ updates:
     schedule:
       interval: monthly
     open-pull-requests-limit: 10
-    reviewers:
-      - tadayosi
-      - phantomjinx
-      - jsolovjo
-      - mmuzikar
-      - grgrzybek
   - package-ecosystem: npm
     directory: '/remote-plugin'
     schedule:
       interval: monthly
     open-pull-requests-limit: 10
-    reviewers:
-      - tadayosi
-      - phantomjinx
-      - jsolovjo
-      - mmuzikar
-      - grgrzybek
   - package-ecosystem: github-actions
     directory: '/'
     schedule:
       interval: monthly
     open-pull-requests-limit: 10
-    reviewers:
-      - tadayosi
-      - phantomjinx
-      - jsolovjo
-      - mmuzikar
-      - grgrzybek
