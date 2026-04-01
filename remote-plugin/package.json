@@ -47,7 +47,7 @@
     "style-loader": "^4.0.0",
     "swc-loader": "^0.2.7",
     "typescript": "^5.9.3",
-    "typescript-eslint": "^8.57.0",
+    "typescript-eslint": "^8.58.0",
     "webpack": "^5.105.4",
     "webpack-cli": "^7.0.0",
     "webpack-dev-server": "^5.2.3"
