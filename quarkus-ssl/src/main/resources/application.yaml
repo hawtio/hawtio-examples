@@ -34,6 +34,9 @@ quarkus:
         module: ./plugin
         # Recommended to use SSL when the plugin is hosted remotely
         url: https://hawtio-example-remote-plugin.surge.sh
+    http:
+      csp:
+        scriptSrcElem: https://hawtio-example-remote-plugin.surge.sh
 
   # Quarkus' property file security configuration
   # https://quarkus.io/guides/security-properties

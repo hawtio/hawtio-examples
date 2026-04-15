@@ -1,0 +1,35 @@
+{
+  "branding": {
+    "appName": "Hawtio AI Sample Application",
+    "appLogoUrl": "img/hawtio-logo.svg",
+    "companyLogoUrl": "img/hawtio-logo.svg",
+    "css": "css/app.css",
+    "favicon": "img/favicon.ico"
+  },
+  "login": {
+    "description": "This sample application demonstrates how to use the Hawtio AI plugin.",
+    "links": [
+      {
+        "url": "#terms",
+        "text": "Terms of use"
+      },
+      {
+        "url": "#help",
+        "text": "Help"
+      },
+      {
+        "url": "#privacy",
+        "text": "Privacy policy"
+      }
+    ]
+  },
+  "about": {
+    "title": "Hawtio AI Sample Application",
+    "description": "This sample application demonstrates how to use the Hawtio AI plugin.",
+    "productInfo": [],
+    "additionalInfo": "",
+    "copyright": "(c) 2026 Hawtio team",
+    "imgSrc": "img/hawtio-logo.svg"
+  },
+  "disabledRoutes": []
+}

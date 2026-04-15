@@ -19,36 +19,24 @@ quarkus:
 
   hawtio:
     # Uncomment to disable Hawtio authentication
-    #authenticationEnabled: false
+    authenticationEnabled: false
     # Uncomment to enable user role checks
     #roles: admin
     # 'sample' custom plugin settings
     plugin:
-      sample-plugin:
-        scope: samplePlugin
+      ai-plugin:
+        scope: hawtioAiPlugin
         module: ./plugin
         # url is optional unless it is hosted on a different location
         #url: http://localhost:8080
-      remote-plugin:
-        scope: remotePlugin
-        module: ./plugin
-        # Recommended to use SSL when the plugin is hosted remotely
-        url: https://hawtio-example-remote-plugin.surge.sh
+      #remote-plugin:
+      #  scope: remotePlugin
+      #  module: ./plugin
+      #  # Recommended to use SSL when the plugin is hosted remotely
+      #  url: https://hawtio-example-remote-plugin.surge.sh
     http:
       csp:
-        scriptSrcElem: https://hawtio-example-remote-plugin.surge.sh
-
-  # Quarkus' property file security configuration
-  # https://quarkus.io/guides/security-properties
-  security:
-    users:
-      embedded:
-        enabled: true
-        plain-text: true
-        users:
-          hawtio: hawtio
-        roles:
-          hawtio: admin
+        connectSrc: https://generativelanguage.googleapis.com
 
   camel:
     # Enable the Camel plugin Debug tab even in non-development environment
@@ -68,8 +56,8 @@ camel:
   context:
     name: SampleCamel
   trace:
-    # Uncomment these properties to enable the Camel plugin Trace tab
-    #enabled: true
+  # Uncomment these properties to enable the Camel plugin Trace tab
+  #enabled: true
 
 quartz:
   cron: 0/10 * * * * ?
