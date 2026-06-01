@@ -2212,18 +2212,18 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@hawtio/react@npm:^2.2.0":
-  version: 2.2.0
-  resolution: "@hawtio/react@npm:2.2.0"
+"@hawtio/react@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@hawtio/react@npm:2.2.2"
   dependencies:
     "@hawtio/camel-model-v4_14": "npm:@hawtio/camel-model@~4.14.5"
     "@hawtio/camel-model-v4_18": "npm:@hawtio/camel-model@~4.18.1"
     "@jolokia.js/simple": "npm:^2.6.0"
     "@module-federation/utilities": "npm:^3.1.77"
     "@monaco-editor/react": "npm:^4.6.0"
-    "@thumbmarkjs/thumbmarkjs": "npm:^1.8.1"
+    "@thumbmarkjs/thumbmarkjs": "npm:^1.9.0"
     dagre: "npm:^0.8.5"
-    dompurify: "npm:^3.4.1"
+    dompurify: "npm:^3.4.3"
     eventemitter3: "npm:^5.0.4"
     jolokia.js: "npm:^2.6.0"
     js-logger: "npm:^1.6.1"
@@ -2248,7 +2248,7 @@ __metadata:
     react: ^17 || ^18 || ^19
     react-dom: ^17 || ^18 || ^19
     react-router-dom: ^6.30
-  checksum: 10/6c20d88b07b76f96d0b7bb934773cf943c7ccc40f71d471c7da0b59049f25f77ba5ee93e7489bd49b44c79b4fc76e2504cc0a64c884e1117989053ee1d80e27a
+  checksum: 10/8c4aeb87f99385633381815d8c7d816de98ec9681b51e62dcaec8e1f7eb03b4031d501e5b1949a9eb64dfc4f78e2e2d6a534b5273df1effa96c7d9aba23a4a60
   languageName: node
   linkType: hard
 
@@ -3428,10 +3428,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@thumbmarkjs/thumbmarkjs@npm:^1.8.1":
-  version: 1.8.1
-  resolution: "@thumbmarkjs/thumbmarkjs@npm:1.8.1"
-  checksum: 10/474468cc4fb582a169960f3db420151905203b875247b7f5c05313a89529764639a719e115766ed1edc3bd726985da3fc30941583a0e0b2960a22cab1cd1f719
+"@thumbmarkjs/thumbmarkjs@npm:^1.9.0":
+  version: 1.9.1
+  resolution: "@thumbmarkjs/thumbmarkjs@npm:1.9.1"
+  checksum: 10/2243b3e36e4c5547dc92fde6e0a16e100a6ebb3de3fee007001823a0af9e0e45b70171a24a0bbddf4562d32eba306425922eae79bfae73f0c62fd2689423ba67
   languageName: node
   linkType: hard
 
@@ -6872,15 +6872,15 @@ __metadata:
   languageName: node
   linkType: hard
 
-"dompurify@npm:^3.4.1":
-  version: 3.4.2
-  resolution: "dompurify@npm:3.4.2"
+"dompurify@npm:^3.4.3":
+  version: 3.4.7
+  resolution: "dompurify@npm:3.4.7"
   dependencies:
     "@types/trusted-types": "npm:^2.0.7"
   dependenciesMeta:
     "@types/trusted-types":
       optional: true
-  checksum: 10/8681a27f17412e754b38d080e39abb36fb14dbf58194d520eedd45b47986323966a0391df540a2011bce72dd37d67f2a015246a58f39d48e3e8f6051274fb974
+  checksum: 10/7432e2a2fe1f4235e09e54d40c285eb76812afab46605fb52449891ca922e474fd5cab2cc297ae9ae1e235d1186e9e9924c32178903359d18e4587cd5119471b
   languageName: node
   linkType: hard
 
@@ -8683,7 +8683,7 @@ __metadata:
     "@eslint/compat": "npm:^2.1.0"
     "@eslint/js": "npm:^10.0.1"
     "@hawtio/backend-middleware": "npm:^1.0.8"
-    "@hawtio/react": "npm:^2.2.0"
+    "@hawtio/react": "npm:^2.2.2"
     "@patternfly/react-charts": "npm:^8.4.0"
     "@patternfly/react-code-editor": "npm:^6.4.0"
     "@patternfly/react-core": "npm:^6.4.0"
