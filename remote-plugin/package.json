@@ -28,7 +28,7 @@
   "devDependencies": {
     "@eslint/compat": "^2.1.0",
     "@eslint/js": "^10.0.1",
-    "@hawtio/backend-middleware": "^1.0.8",
+    "@hawtio/backend-middleware": "^1.1.0",
     "@swc/core": "^1.15.43",
     "@types/react": "^18.3.23",
     "@types/react-dom": "^18.3.7",
