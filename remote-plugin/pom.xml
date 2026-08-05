@@ -59,7 +59,7 @@
               <goal>yarn</goal>
             </goals>
             <configuration>
-              <arguments>npm audit --all</arguments>
+              <arguments>npm audit --all --severity high</arguments>
             </configuration>
           </execution>
           <execution>
