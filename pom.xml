@@ -21,23 +21,23 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
-    <hawtio-version>5.2.1</hawtio-version>
+    <hawtio-version>5.3.0</hawtio-version>
 
     <!-- Versions for major components -->
     <!-- Camel -->
-    <camel-version>4.18.2</camel-version>
+    <camel-version>4.22.0</camel-version>
     <!-- Jolokia -->
-    <jolokia-version>2.5.1</jolokia-version>
+    <jolokia-version>2.6.2</jolokia-version>
     <!-- Quarkus -->
-    <quarkus-version>3.32.3</quarkus-version>
+    <quarkus-version>3.39.1</quarkus-version>
     <!-- Spring Boot 3 -->
-    <spring-version>6.2.16</spring-version>
-    <spring-boot-version>3.5.11</spring-boot-version>
+    <spring-version>6.2.19</spring-version>
+    <spring-boot-version>3.5.15</spring-boot-version>
     <!-- Spring Boot 4 -->
-    <spring7-version>7.0.5</spring7-version>
-    <spring-boot4-version>4.0.3</spring-boot4-version>
+    <spring7-version>7.0.9</spring7-version>
+    <spring-boot4-version>4.1.1</spring-boot4-version>
     <!-- Jetty -->
-    <jetty-version>12.1.7</jetty-version>
+    <jetty-version>12.1.12</jetty-version>
 
     <!-- Used for maven-frontend-plugin -->
     <node-version>v22.16.0</node-version>
