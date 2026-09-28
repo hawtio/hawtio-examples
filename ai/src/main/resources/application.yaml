@@ -36,7 +36,9 @@ quarkus:
       #  url: https://hawtio-example-remote-plugin.surge.sh
     http:
       csp:
-        connectSrc: https://generativelanguage.googleapis.com
+        connectSrc:
+          - https://api.openai.com
+          - https://generativelanguage.googleapis.com
 
   camel:
     # Enable the Camel plugin Debug tab even in non-development environment
