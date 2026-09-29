@@ -38,6 +38,7 @@ quarkus:
       csp:
         connectSrc:
           - https://api.openai.com
+          - https://api.anthropic.com
           - https://generativelanguage.googleapis.com
 
   camel:
